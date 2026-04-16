@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Modals of deduction","children":[{"content":"About","children":[{"content":"Funcionan como cualquier modal <mark style=\"background: #FFF3A3A6;\">(<span style=\"color:rgb(0, 112, 192)\"><strong>Subject</strong></span> + <span style=\"color:rgb(255, 0, 0)\"><strong>modal verb</strong></span> + <span style=\"color:rgb(175, 44, 127)\"><strong>verb (infinitive)</strong></span> )</mark>","children":[{"content":"<span style=\"color:rgb(0, 112, 192)\">Mark</span> <span style=\"color:rgb(255, 0, 0)\">must</span> <span style=\"color:rgb(175, 44, 127)\">be</span> in Madrid.","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"<span style=\"color:rgb(0, 112, 192)\">Alina</span> <span style=\"color:rgb(255, 0, 0)\">can&apos;t</span> <span style=\"color:rgb(175, 44, 127)\">be</span> serious.","children":[],"payload":{"tag":"li","lines":"14,15"}}],"payload":{"tag":"h3","lines":"12,13"}},{"content":"El uso depende de lo que queramos expresar.","children":[],"payload":{"tag":"h3","lines":"15,16"}},{"content":"Normalmente van <mark style=\"background: #FFB86CA6;\">acompa&#xf1;ados de una frase</mark> que nos ayuda a entender qu&#xe9; modal usar.","children":[{"content":"<mark style=\"background: #FFB86CA6;\">It is snowing in Reinosa</mark>. <span style=\"color:rgb(0, 112, 192)\">It</span> <span style=\"color:rgb(255, 0, 0)\">must</span> <span style=\"color:rgb(175, 44, 127)\">be</span> really cold.","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"<span style=\"color:rgb(0, 112, 192)\">Mark</span> <span style=\"color:rgb(255, 0, 0)\">might not</span> <span style=\"color:rgb(175, 44, 127)\">finish</span> the task on time. <mark style=\"background: #FFB86CA6;\">He is working very slow</mark>.","children":[],"payload":{"tag":"li","lines":"18,22"}}],"payload":{"tag":"h3","lines":"16,17"}}],"payload":{"tag":"h2","lines":"11,12"}},{"content":"Must","children":[{"content":"Lo usamos cuando estamos seguros de algo en afirmativa.","children":[{"content":"The lights are on. <span style=\"color:rgb(0, 112, 192)\">Anna</span> <span style=\"color:rgb(255, 0, 0)\">must</span> <span style=\"color:rgb(175, 44, 127)\">be</span> at home.","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"She gets excellent grades. <span style=\"color:rgb(0, 112, 192)\">She</span> <span style=\"color:rgb(255, 0, 0)\">must</span> <span style=\"color:rgb(175, 44, 127)\">be</span> a very good student.","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"h3","lines":"23,24"}}],"payload":{"tag":"h2","lines":"22,23"}},{"content":"Can&apos;t","children":[{"content":"Lo usamos cuando estamos seguros de algo en negativa.","children":[{"content":"The office is empty and the lights are off. <span style=\"color:rgb(0, 112, 192)\"><span style=\"color:rgb(0, 112, 192)\">Mr. Brown</span></span> <span style=\"color:rgb(255, 0, 0)\">can&apos;t</span> <span style=\"color:rgb(175, 44, 127)\">be</span> inside.","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"Tom? He never watches football matches. <span style=\"color:rgb(0, 112, 192)\"><span style=\"color:rgb(0, 112, 192)\">He</span></span> <span style=\"color:rgb(255, 0, 0)\">can&apos;t</span> <span style=\"color:rgb(175, 44, 127)\">be</span> a fan.","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h3","lines":"28,29"}}],"payload":{"tag":"h2","lines":"27,28"}},{"content":"Might / Might not","children":[{"content":"Lo usamos para expresar duda en afirmativa o negativa.","children":[{"content":"A menudo se usa junto a expresiones como &quot;<strong>maybe</strong>&quot;, &quot;<strong>perhaps</strong>&quot;, &quot;<strong>it&apos;s possible</strong>&quot;, &quot;<strong>not sure</strong>&quot;","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"Dark clouds are coming from the sea. <span style=\"color:rgb(0, 112, 192)\">It</span> <span style=\"color:rgb(255, 0, 0)\">might</span> <span style=\"color:rgb(175, 44, 127)\">rain</span> in the afternoon.","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Sarah is not answering the phone. <span style=\"color:rgb(0, 112, 192)\">She</span><span style=\"color:rgb(255, 0, 0)\"> might</span><span style=\"color:rgb(255, 0, 0)\"> not</span>  <span style=\"color:rgb(175, 44, 127)\">be</span> at home.","children":[],"payload":{"tag":"li","lines":"36,38"}}],"payload":{"tag":"h3","lines":"33,34"}}],"payload":{"tag":"h2","lines":"32,33"}},{"content":"Deducciones en pasado","children":[{"content":"Se puede hacer con todos los modales","children":[],"payload":{"tag":"h3","lines":"39,40"}},{"content":"La estructura es <mark style=\"background: #FFF3A3A6;\"><span style=\"color:rgb(0, 112, 192)\"> <strong>Subject</strong></span> + <strong>modal verb</strong> + <span style=\"color:rgb(194, 94, 0)\"><strong>have</strong></span> + <span style=\"color:rgb(237, 7, 230)\"><strong>past participle</strong><br></span></mark>","children":[],"payload":{"tag":"h3","lines":"40,41"}},{"content":"Must have","children":[{"content":"She never skips a meeting. <span style=\"color:rgb(0, 112, 192)\">She</span> <span style=\"color:rgb(255, 0, 0)\">must</span> <span style=\"color:rgb(194, 94, 0)\">have</span> <span style=\"color:rgb(237, 7, 230)\">forgotten</span> it","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"He is really in pain. <span style=\"color:rgb(0, 112, 192)\">He</span> <span style=\"color:rgb(255, 0, 0)\">must</span> <span style=\"color:rgb(194, 94, 0)\">have</span> <span style=\"color:rgb(237, 7, 230)\">broken</span> his leg.","children":[],"payload":{"tag":"li","lines":"43,44"}}],"payload":{"tag":"h3","lines":"41,42"}},{"content":"Can&apos;t / Couldn&apos;t have","children":[{"content":"I was hiding. <span style=\"color:rgb(0, 112, 192)\">He</span> <span style=\"color:rgb(255, 0, 0)\">can&apos;t</span> <span style=\"color:rgb(194, 94, 0)\">have</span> <span style=\"color:rgb(237, 7, 230)\">seen</span> me.","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"<span style=\"color:rgb(0, 112, 192)\">They</span> <span style=\"color:rgb(255, 0, 0)\">can</span><span style=\"color:rgb(255, 0, 0)\">&apos;t</span> <span style=\"color:rgb(194, 94, 0)\">have</span> <span style=\"color:rgb(237, 7, 230)\">finished</span> the exam so quickly, it was really long.","children":[],"payload":{"tag":"li","lines":"46,48"}}],"payload":{"tag":"h3","lines":"44,45"}},{"content":"Might / Might not have","children":[{"content":"","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"She arrived late. <span style=\"color:rgb(0, 112, 192)\">She</span> <span style=\"color:rgb(255, 0, 0)\">might</span> <span style=\"color:rgb(194, 94, 0)\">have</span> <span style=\"color:rgb(237, 7, 230)\">missed</span> the train.","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"<span style=\"color:rgb(0, 112, 192)\">He</span><span style=\"color:rgb(255, 0, 0)\"> might not</span> <span style=\"color:rgb(194, 94, 0)\">have</span> <span style=\"color:rgb(237, 7, 230)\">received</span> the email, he didn&apos;t answer.","children":[],"payload":{"tag":"li","lines":"51,52"}}],"payload":{"tag":"h3","lines":"48,49"}}],"payload":{"tag":"h2","lines":"38,39"}}],"payload":{"tag":"h1","lines":"9,10"}},{"toolbar":false,"colorFreezeLevel":2,"maxWidth":1000,"color":["#FF5555","#50FA7B","#8BE9FD","#BD93F9","#FFB86C","#6272A4","#80FFEA","#FFB8FF","#FF9580","#FF79C6"],"html":true})</script>
+</body>
+</html>
